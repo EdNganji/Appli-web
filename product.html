@@ -1,0 +1,243 @@
+
+    <!DOCTYPE html>
+    <html lang="en">
+    
+      <head>
+    
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <link href="https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900&display=swap" rel="stylesheet">
+    
+        <title>SkStore - Product Detail</title>
+    
+        
+        <link rel="stylesheet" type="text/css" href="ressources/css/bootstrap.min.css">
+    
+        <link rel="stylesheet" type="text/css" href="ressources/css/font-awesome.css">
+    
+        <link rel="stylesheet" href="ressources/css/style.css">
+    
+        <link rel="stylesheet" href="ressources/css/reset.css">
+    
+        <link rel="stylesheet" href="ressources/css/owl-carousel.css">
+    
+        <link rel="stylesheet" href="ressources/css/lightbox.css">
+    
+        </head>
+    
+        <body>
+        
+        
+            <div id="preloader">
+                <div class="jumper">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>  
+            
+              
+            <header class="header-area header-sticky">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12">
+                            <nav class="main-nav">
+                                                 
+                                <a href="index.html" class="logo">
+                                        
+                                        <img src="ressources/images/logo">
+                                </a>
+                                    
+        
+                                <ul class="nav">
+                                    <li class="scroll-to-section"><a href="index.html" class="active">Home</a></li>
+                    
+                                </ul>        
+                                <a class='menu-trigger'>
+                                    <span>Menu</span>
+                                </a>
+                                
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </header>
+            
+        
+            
+            <div class="page-heading" id="top">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="inner-content">
+                                <h2>Single Product Page</h2>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        
+            <section class="section" id="product">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8">
+                        <div class="left-images">
+                             
+                            <img src="/{{item.image}}" alt="" width="98%" height="100%" >
+                            
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="right-content">
+                            <h4>{{item.name}}</h4>
+                            <span class="price">${{item.price}}</span>
+                            <ul class="stars">
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                                <li><i class="fa fa-star"></i></li>
+                            </ul>
+                             
+                            <div class="quantity-content">
+                                <div class="left-content">
+                                    <h6>No. of Orders</h6>
+                                </div>
+                                <div class="right-content">
+                                    <div class="quantity buttons_added">
+                                        <input type="button" value="-" class="minus"><input type="number" step="1" min="1" max="" name="quantity" value="1" title="Qty" class="input-text qty text" size="4" pattern="" inputmode=""><input type="button" value="+" class="plus">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="total">
+                                <h4>Total: ${{item.price}}</h4>
+                                <div class="main-border-button"><a href="#">Add To Cart</a></div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </section>
+            
+            <div class="subscribe">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-8">
+                            <div class="section-heading">
+                                <h2>By Subscribing To Our Newsletter You Can Get 25% Off</h2>
+                                <span>of your first Purchase</span>
+                            </div>
+                            <form id="subscribe" action="" method="get">
+                                <div class="row">
+                                  <div class="col-lg-5">
+                                    <fieldset>
+                                      <input name="name" type="text" id="name" placeholder="Your Name" required="">
+                                    </fieldset>
+                                  </div>
+                                  <div class="col-lg-5">
+                                    <fieldset>
+                                      <input name="email" type="text" id="email" pattern="[^ @]*@[^ @]*" placeholder="Your Email Address" required="">
+                                    </fieldset>
+                                  </div>
+                                  <div class="col-lg-2">
+                                    <fieldset>
+                                      <button type="submit" id="form-submit" class="main-dark-button"><i class="fa fa-paper-plane"></i></button>
+                                    </fieldset>
+                                  </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="col-lg-4">
+                            <div class="row">
+                                <div class="col-6">
+                                    <ul>
+                                        <li>Store Location:<br><span>950 St-Anne Street, Bathurst, New-Brunswick</span></li>
+                                        <li>Phone:<br><span>506-012-3456</span></li>
+                                        <li>Office Location:<br><span>Montreal</span></li>
+                                    </ul>
+                                </div>
+                                <div class="col-6">
+                                    <ul>
+                                        <li>Work Hours:<br><span>09:00 AM - 7:30 PM Daily</span></li>
+                                        <li>Email:<br><span>info@skstore.ca</span></li>
+                                        <li><br>Social Media:<br><span><a href="#">Facebook</a>, <a href="#">Instagram</a></span></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            
+            
+            <footer>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-3">
+                            <div class="first-item">
+                                <div class="logo">
+                                    
+                                    <img src="ressources/images/logo2.png" alt="">
+                                </div>
+                               
+                            </div>
+                        </div>
+                        <div class="col-lg-3">
+                            <h4>Shopping &amp; Categories</h4>
+                            
+                        </div>
+                        <div class="col-lg-3">
+                            <h4>Useful Links</h4>
+                            
+                        </div>
+                        <div class="col-lg-3">
+                            <h4>Help &amp; Information</h4>
+                           
+                        </div>
+                        
+                    </div>
+                </div>
+            </footer>
+        
+            <script src="ressources/js/jquery-2.1.0.min.js"></script> 
+            <script src="ressources/js/popper.js"></script>
+            <script src="ressources/js/bootstrap.min.js"></script>
+            <script src="ressources/js/owl-carousel.js"></script>
+            <script src="ressources/js/accordions.js"></script>
+            <script src="ressources/js/datepicker.js'%}"></script>
+            <script src="ressources/js/scrollreveal.min.js"></script>
+            <script src="ressources/js/waypoints.min.js"></script>
+            <script src="ressources/js/jquery.counterup.min.js"></script>
+            <script src="ressources/js/imgfix.min.js"></script> 
+            <script src="ressources/js/slick.js"></script> 
+            <script src="ressources/js/lightbox.js"></script> 
+            <script src="ressources/js/isotope.js"></script> 
+            <script src="ressources/js/custom.js"></script>
+        
+            <script>
+        
+                $(function() {
+                    var selectedClass = "";
+                    $("p").click(function(){
+                    selectedClass = $(this).attr("data-rel");
+                    $("#portfolio").fadeTo(50, 0.1);
+                        $("#portfolio div").not("."+selectedClass).fadeOut();
+                    setTimeout(function() {
+                      $("."+selectedClass).fadeIn();
+                      $("#portfolio").fadeTo(50, 1);
+                    }, 500);
+                        
+                    });
+                });
+        
+            </script>
+        
+          </body>
+        </html>
+    
+    
+    
